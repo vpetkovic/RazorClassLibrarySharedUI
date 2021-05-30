@@ -72,11 +72,13 @@ Steps to add it to your project:
           ```
 
 5. Add the following to the **Demo.SharedUI.csproj** file
-      - In <PropertyGroup> add this line 
+      - Add the following to the `<PropertyGroup>`  
         ``` c#
-        <GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
+        <PropertyGroup>
+          <GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
+        </PropertyGroup>
         ``` 
-      - Add the following <ItemGroup> <br>
+      - Add the following `<ItemGroup>` <br>
         ``` c#
         <ItemGroup>
             <EmbeddedResource Include="wwwroot\**\*" />
