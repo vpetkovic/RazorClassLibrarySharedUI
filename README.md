@@ -45,4 +45,3 @@ Steps to add it to your project:
    
    ...
    ```
-
